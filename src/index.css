@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: mintcream;
+}
+
+.Counter-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.count-box {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.735);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.count-box h1 {
+    color: #8c52ff;
+}
+
+.count-box h1 {
+    font-size: 170px;
+    margin: 0;
+}
+
+.count-limit {
+    margin: 20px;
+}
+
+.count-limit p {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.count-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.count-btn button {
+    border: none;
+    background-color: #8c52ff;
+    color: white;
+    padding: 15px;
+    font-size: x-large;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.count-btn button:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width:1024px) {
+    .Counter-section {
+        padding: 20px;
+    }
+
+    .count-box {
+        width: 50%;
+        height: 250px;
+    }
+
+    .count-box h1 {
+        font-size: 100px;
+    }
+
+    .count-limit p {
+        font-size: medium;
+    }
+
+    .count-btn {
+        gap: 10px;
+    }
+
+    .count-btn button {
+        padding: 8px;
+        font-size: medium;
+    }
+}
+
+@media (max-width:640px) {
+    .Counter-section {
+        padding: 10px;
+    }
+
+    .count-box {
+        width: 70%;
+        height: 150px;
+    }
+
+    .count-box h1 {
+        font-size: 70px;
+    }
+
+    .count-limit p {
+        font-size: small;
+    }
+
+    .count-btn {
+        gap: 5px;
+    }
+
+    .count-btn button {
+        padding: 4px 6px;
+        font-size: small;
+    }
+}
