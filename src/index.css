@@ -6,11 +6,11 @@
 
 body {
     font-family: "DM Sans", sans-serif;
-    background-color: mintcream;
 }
 
 .Counter-section {
     height: 100vh;
+    background-color: mintcream;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,6 +69,15 @@ body {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
 }
 
+.Counter-section.dark {
+    background-color: rgba(0, 0, 0, 0.889);
+    color: white;
+}
+
+.count-box.dark {
+    background-color: grey;
+}
+
 
 @media (max-width:1024px) {
     .Counter-section {
@@ -122,6 +131,6 @@ body {
 
     .count-btn button {
         padding: 4px 6px;
-        font-size: small;
+        font-size: x-small;
     }
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 function Counter() {
   const [count, setcount] = useState(0);
+  const [mode, setmode] = useState(true);
 
   const handleInc = (event) => {
     event.preventDefault();
@@ -18,10 +19,14 @@ function Counter() {
     event.preventDefault();
     setcount(0);
   };
+  const handleMode = (event) => {
+    event.preventDefault();
+    setmode(!mode);
+  };
   return (
     <>
-      <section className="Counter-section">
-        <div className="count-box">
+      <section className={`Counter-section ${mode ? "light" : "dark"}`}>
+        <div className={`count-box ${mode ? "light" : "dark"}`}>
           <h3>CURRENT COUNT</h3>
           <h1>{count}</h1>
         </div>
@@ -36,6 +41,7 @@ function Counter() {
           <button onClick={handleInc}>+ Increment</button>
           <button onClick={handleDec}>- Decrement</button>
           <button onClick={handleReset}>Reset</button>
+          <button onClick={handleMode}>{mode ? "Light" : "Dark"}mode</button>
         </div>
       </section>
     </>
