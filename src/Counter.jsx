@@ -34,7 +34,7 @@ function Counter() {
           {count === 20 ? (
             <p style={{ color: "red" }}>Maximum limit reached!</p>
           ) : count === 0 ? (
-            <p style={{ color: "green" }}>Maximum limit 20 Count</p>
+            <p style={{ color: "green" }}>Minimum limit reached Max(20)</p>
           ) : (
             <p style={{ color: "orange" }}>Count is active</p>
           )}
