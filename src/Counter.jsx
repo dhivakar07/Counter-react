@@ -3,24 +3,20 @@ function Counter() {
   const [count, setcount] = useState(0);
   const [mode, setmode] = useState(true);
 
-  const handleInc = (event) => {
-    event.preventDefault();
+  const handleInc = () => {
     if (count < 20) {
       setcount(count + 1);
     }
   };
-  const handleDec = (event) => {
-    event.preventDefault();
+  const handleDec = () => {
     if (count > 0) {
       setcount(count - 1);
     }
   };
-  const handleReset = (event) => {
-    event.preventDefault();
+  const handleReset = () => {
     setcount(0);
   };
-  const handleMode = (event) => {
-    event.preventDefault();
+  const handleMode = () => {
     setmode(!mode);
   };
   return (
